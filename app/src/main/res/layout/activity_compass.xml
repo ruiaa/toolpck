@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/view_toolbar"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/activity_gradienter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.ruiaa.toolpck.tool.measure.compass.CompassView
+                android:id="@+id/activity_gradienter_view"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="70%"
+                app:layout_widthPercent="70%"
+                app:compass_north_color="?attr/colorAccent"
+                app:compass_south_color="?attr/colorPrimary"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/compass_flat_to_accuracy"
+            android:gravity="center"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+</layout>

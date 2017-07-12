@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_toollist_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="66.66%"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fragment_toollist_float_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:elevation="@dimen/elevation_toolbar"
+                app:fabSize="normal"
+                app:srcCompat="@mipmap/add"
+                />
+
+        </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</layout>

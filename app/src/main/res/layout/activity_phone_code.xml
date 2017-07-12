@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="phoneCode"
+            type="String"/>
+        <variable
+            name="phoneLocation"
+            type="String"/>
+        <variable
+            name="phoneCardType"
+            type="String"/>
+        <variable
+            name="phoneAreaCode"
+            type="String"/>
+        <variable
+            name="phonePostCode"
+            type="String"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/view_toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:gravity="bottom"
+            >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/phone_code_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_48"
+                android:paddingLeft="@dimen/dp_8"
+                android:inputType="phone"
+                android:hint="@{` `+@string/phone_code_query_input_hint}"
+                android:background="@drawable/border_corner_grey_500"
+                />
+
+            <Button
+                android:id="@+id/phone_code_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/query"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_corner_pink_with_press"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/view_item_text_label_content"
+                     bind:label="@{@string/phone_location}"
+                     bind:content="@{phoneLocation}"
+                     />
+            <include layout="@layout/view_item_text_label_content"
+                     bind:label="@{@string/phone_card_type}"
+                     bind:content="@{phoneCardType}"
+                />
+            <include layout="@layout/view_item_text_label_content"
+                     bind:label="@{@string/phone_area_code}"
+                     bind:content="@{phoneAreaCode}"
+                />
+            <include layout="@layout/view_item_text_label_content"
+                     bind:label="@{@string/post_code}"
+                     bind:content="@{phonePostCode}"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

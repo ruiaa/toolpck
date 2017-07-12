@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/activity_vibrator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/view_toolbar"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.github.megatronking.svg.support.extend.SVGImageView
+            android:id="@+id/activity_vibrator_switch"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/vibrate"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_text_content"
+            >
+
+            <TextView
+                android:id="@+id/activity_vibrator_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/vibrator_item_height"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@{@string/time+`  :`}"
+                />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/activity_vibrator_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vibrator_item_height"
+                android:layout_marginLeft="@dimen/vibrator_item_margin_to_label"
+                android:layout_toRightOf="@id/activity_vibrator_time_text"
+                android:layout_alignParentTop="true"
+                >
+
+                <TextView
+                    android:id="@+id/activity_vibrator_time_input_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@{@string/limit+` : `}"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/activity_vibrator_time_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:minWidth="@dimen/dp_32"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_vibrator_time_input_text"
+                    android:background="@null"
+                    android:hint=" ? "
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_vibrator_time_input"
+                    android:text="@string/time_second"
+                    />
+
+                <TextView
+                    android:id="@+id/activity_vibrator_limitless_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginLeftPercent="50%"
+                    android:layout_centerVertical="true"
+                    android:text="@string/limitless"
+                    android:gravity="center"
+                    />
+
+                <com.rey.material.widget.Switch
+                    android:id="@+id/activity_vibrator_limitless_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_toRightOf="@id/activity_vibrator_limitless_text"
+                    android:layout_centerVertical="true"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_vibrator_repeat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/vibrator_item_height"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_below="@id/activity_vibrator_time_layout"
+                android:text="@{@string/repeat+`  :`}"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:id="@+id/activity_vibrator_repeat_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vibrator_item_height"
+                android:layout_marginLeft="@dimen/vibrator_item_margin_to_label"
+                android:layout_toRightOf="@id/activity_vibrator_repeat_text"
+                android:layout_alignTop="@id/activity_vibrator_repeat_text"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <com.rey.material.widget.Switch
+                    android:id="@+id/activity_vibrator_repeat_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/activity_vibrator_repeat_start_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vibrator_item_height"
+                android:layout_alignLeft="@id/activity_vibrator_repeat_switch_layout"
+                android:layout_below="@id/activity_vibrator_repeat_switch_layout"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/activity_vibrator_repeat_start_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@{@string/vibrate_start+` : `}"
+                    />
+
+                <EditText
+                    android:id="@+id/activity_vibrator_repeat_start_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/vibrator_item_height"
+                    android:minWidth="@dimen/dp_32"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_toRightOf="@id/activity_vibrator_repeat_start_text"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint=" ? "
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_vibrator_repeat_start_input"
+                    android:text="@string/time_milli"
+                    />
+
+                <TextView
+                    android:id="@+id/activity_vibrator_repeat_stop_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginLeftPercent="50%"
+                    android:layout_centerVertical="true"
+                    android:text="@{@string/vibrate_stop+` : `}"
+                    />
+
+                <EditText
+                    android:id="@+id/activity_vibrator_repeat_stop_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/vibrator_item_height"
+                    android:minWidth="@dimen/dp_32"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_vibrator_repeat_stop_text"
+                    android:background="@null"
+                    android:hint=" ? "
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_vibrator_repeat_stop_input"
+                    android:text="@string/time_milli"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</layout>

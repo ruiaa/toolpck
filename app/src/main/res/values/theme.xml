@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/text_color_normal_day</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="toolpck_bg_calculator_item">@drawable/bg_calculator_item_day</item>
+    </style>
+
+    <style name="AppTheme.Night" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/text_color_normal_night</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="toolpck_bg_calculator_item">@drawable/bg_calculator_item_night</item>
+    </style>
+
+
+
+
+    <!--blueTheme-->
+    <style name="BlueTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueAccent</item>
+    </style>
+    <style name="BlueTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueAccent</item>
+    </style>
+    <!--blueGrey-->
+    <style name="BlueGreyTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBlueGreyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlueGreyPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueGreyAccent</item>
+    </style>
+    <style name="BlueGreyTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorBlueGreyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlueGreyPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueGreyAccent</item>
+    </style>
+    <!--redTheme-->
+    <style name="RedTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorRedPrimary</item>
+        <item name="colorPrimaryDark">@color/colorRedPrimaryDark</item>
+        <item name="colorAccent">@color/colorRedAccent</item>
+    </style>
+    <style name="RedTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorRedPrimary</item>
+        <item name="colorPrimaryDark">@color/colorRedPrimaryDark</item>
+        <item name="colorAccent">@color/colorRedAccent</item>
+    </style>
+    <!--brownTheme-->
+    <style name="BrownTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBrownPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBrownPrimaryDark</item>
+        <item name="colorAccent">@color/colorBrownAccent</item>
+    </style>
+    <style name="BrownTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorBrownPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBrownPrimaryDark</item>
+        <item name="colorAccent">@color/colorBrownAccent</item>
+    </style>
+    <!--greenTheme-->
+    <style name="GreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorGreenAccent</item>
+    </style>
+    <style name="GreenTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorGreenAccent</item>
+    </style>
+    <!--purpleTheme-->
+    <style name="PurpleTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorPurpleAccent</item>
+    </style>
+    <style name="PurpleTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorPurpleAccent</item>
+    </style>
+    <!--deepPurpleTheme-->
+    <style name="DeepPurpleTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDeepPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepPurpleAccent</item>
+    </style>
+    <style name="DeepPurpleTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorDeepPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepPurpleAccent</item>
+    </style>
+    <!--tealTheme-->
+    <style name="TealTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorTealPrimary</item>
+        <item name="colorPrimaryDark">@color/colorTealPrimaryDark</item>
+        <item name="colorAccent">@color/colorTealAccent</item>
+    </style>
+    <style name="TealTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorTealPrimary</item>
+        <item name="colorPrimaryDark">@color/colorTealPrimaryDark</item>
+        <item name="colorAccent">@color/colorTealAccent</item>
+    </style>
+    <!--pinkTheme-->
+    <style name="PinkTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPinkPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPinkPrimaryDark</item>
+        <item name="colorAccent">@color/colorPinkAccent</item>
+    </style>
+    <style name="PinkTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorPinkPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPinkPrimaryDark</item>
+        <item name="colorAccent">@color/colorPinkAccent</item>
+    </style>
+    <!--orange-->
+    <style name="OrangeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorOrangeAccent</item>
+    </style>
+    <style name="OrangeTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorOrangeAccent</item>
+    </style>
+    <!--deepOrange-->
+    <style name="DeepOrangeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDeepOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepOrangeAccent</item>
+    </style>
+    <style name="DeepOrangeTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorDeepOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepOrangeAccent</item>
+    </style>
+    <!--indigo-->
+    <style name="IndigoTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorIndigoPrimary</item>
+        <item name="colorPrimaryDark">@color/colorIndigoPrimaryDark</item>
+        <item name="colorAccent">@color/colorIndigoAccent</item>
+    </style>
+    <style name="IndigoTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorIndigoPrimary</item>
+        <item name="colorPrimaryDark">@color/colorIndigoPrimaryDark</item>
+        <item name="colorAccent">@color/colorIndigoAccent</item>
+    </style>
+    <!--cyan-->
+    <style name="CyanTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorCyanPrimary</item>
+        <item name="colorPrimaryDark">@color/colorCyanPrimaryDark</item>
+        <item name="colorAccent">@color/colorCyanAccent</item>
+    </style>
+    <style name="CyanTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorCyanPrimary</item>
+        <item name="colorPrimaryDark">@color/colorCyanPrimaryDark</item>
+        <item name="colorAccent">@color/colorCyanAccent</item>
+    </style>
+    <!--lightGreen-->
+    <style name="LightGreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorLightGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLightGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorLightGreenAccent</item>
+    </style>
+    <style name="LightGreenTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorLightGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLightGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorLightGreenAccent</item>
+    </style>
+    <!--lime-->
+    <style name="LimeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorLimePrimary</item>
+        <item name="colorPrimaryDark">@color/colorLimePrimaryDark</item>
+        <item name="colorAccent">@color/colorLimeAccent</item>
+    </style>
+    <style name="LimeTheme.Night" parent="AppTheme.Night">
+        <item name="colorPrimary">@color/colorLimePrimary</item>
+        <item name="colorPrimaryDark">@color/colorLimePrimaryDark</item>
+        <item name="colorAccent">@color/colorLimeAccent</item>
+    </style>
+
+
+</resources>

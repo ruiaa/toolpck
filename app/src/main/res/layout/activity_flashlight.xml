@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:svg="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_flashlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/view_toolbar"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.github.megatronking.svg.support.extend.SVGImageView
+            android:id="@+id/activity_flashlight_light_switch"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/flashlight"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <!--    亮度      -->
+            <TextView
+                android:id="@+id/activity_flashlight_brightness_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_marginLeft="@dimen/margin_left_text_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/brightness"
+                android:visibility="invisible"
+                />
+            <LinearLayout
+                android:id="@+id/activity_flashlight_brightness_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_toRightOf="@id/activity_flashlight_brightness_text"
+                android:layout_alignTop="@id/activity_flashlight_brightness_text"
+                android:gravity="center"
+                android:visibility="invisible"
+                >
+                <SeekBar
+                    style="@style/seekbar_default"
+                    android:id="@+id/activity_flashlight_brightness_bar"
+                    />
+            </LinearLayout>
+
+
+            <!--    闪烁      -->
+            <TextView
+                android:id="@+id/activity_flashlight_twinkle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_below="@id/activity_flashlight_brightness_text"
+                android:layout_alignRight="@id/activity_flashlight_brightness_text"
+                android:gravity="center"
+                android:text="@string/twinkle"
+                />
+            <LinearLayout
+                android:id="@+id/activity_flashlight_twinkle_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_toRightOf="@id/activity_flashlight_twinkle_text"
+                android:layout_alignTop="@id/activity_flashlight_twinkle_text"
+                android:layout_alignLeft="@id/activity_flashlight_brightness_bar_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <com.rey.material.widget.Switch
+                    android:id="@+id/activity_flashlight_twinkle_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <!--    亮 时间    -->
+            <TextView
+                android:id="@+id/activity_flashlight_twinkle_bright_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_below="@id/activity_flashlight_twinkle_text"
+                android:layout_alignLeft="@id/activity_flashlight_twinkle_switch_layout"
+                android:gravity="center"
+                android:text="@string/bright"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_toRightOf="@id/activity_flashlight_twinkle_bright_text"
+                android:layout_alignTop="@id/activity_flashlight_twinkle_bright_text"
+                android:gravity="center">
+                <SeekBar
+                    style="@style/seekbar_default"
+                    android:id="@+id/activity_flashlight_twinkle_bright_bar"
+                    />
+            </LinearLayout>
+            <!--    暗 时间    -->
+            <TextView
+                android:id="@+id/activity_flashlight_twinkle_dark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_below="@id/activity_flashlight_twinkle_bright_text"
+                android:layout_alignLeft="@id/activity_flashlight_twinkle_switch_layout"
+                android:gravity="center"
+                android:text="@string/dark"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:gravity="center"
+                android:layout_toRightOf="@id/activity_flashlight_twinkle_dark_text"
+                android:layout_alignTop="@id/activity_flashlight_twinkle_dark_text"
+                >
+                <SeekBar
+                    style="@style/seekbar_default"
+                    android:id="@+id/activity_flashlight_twinkle_dark_bar"
+                    />
+            </LinearLayout>
+
+            <!--    SOS     -->
+            <TextView
+                android:id="@+id/activity_flashlight_sos_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_below="@id/activity_flashlight_twinkle_dark_text"
+                android:layout_alignRight="@id/activity_flashlight_brightness_text"
+                android:gravity="center"
+                android:text="SOS"
+                />
+            <LinearLayout
+                android:id="@+id/activity_flashlight_sos_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flashlight_item_height"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_toRightOf="@id/activity_flashlight_sos_text"
+                android:layout_alignTop="@id/activity_flashlight_sos_text"
+                android:layout_alignLeft="@id/activity_flashlight_brightness_bar_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <com.rey.material.widget.Switch
+                    android:id="@+id/activity_flashlight_sos_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</layout>

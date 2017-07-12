@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="seekbar_default">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_h_control</item>
+        <item name="android:layout_marginRight">@dimen/margin_h_control</item>
+    </style>
+
+
+    <style name="gridlayout_item_default">
+        <item name="android:textSize">@dimen/sp_28</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_columnWeight">1</item>
+        <item name="layout_rowWeight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/toolpck_bg_calculator_item</item>
+        <item name="layout_gravity">fill</item>
+        <item name="android:layout_marginRight">@dimen/dp_2</item>
+        <item name="android:layout_marginBottom">@dimen/dp_2</item>
+    </style>
+
+    <style name="textview_calculator_result_record">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dp_4</item>
+        <item name="android:paddingBottom">@dimen/dp_4</item>
+        <item name="android:gravity">right|end|center_vertical</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+</resources>

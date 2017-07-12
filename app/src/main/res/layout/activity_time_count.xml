@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="countTime"
+            type="android.databinding.ObservableLong"/>
+        <variable
+            name="counting"
+            type="boolean"/>
+        <variable
+            name="pauseing"
+            type="boolean"/>
+        <import type="com.ruiaa.toolpck.tool.measure.timecount.TimeCountUtil"/>
+        <import type="android.view.View"/>
+    </data>
+    <LinearLayout
+        android:id="@+id/time_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/view_toolbar"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_24"/>
+
+        <!--时间-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/sp_60"
+                android:text="@{TimeCountUtil.getTimeMinute(countTime.get())}"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/sp_40"
+                android:text=" : "
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/sp_60"
+                android:text="@{TimeCountUtil.getTimeSecond(countTime.get())}"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/sp_24"
+                android:text="@{TimeCountUtil.getTimeMillisTwo(countTime.get())}"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_32"/>
+
+        <!--按钮-->
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_60"
+            >
+
+            <!--开始-->
+            <Button
+                android:id="@+id/time_count_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_fillet_coloraccen"
+                android:visibility="@{counting?View.INVISIBLE:View.VISIBLE}"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/white"
+                android:text="@string/start"
+                />
+
+            <!--继续 暂停-->
+            <Button
+                android:id="@+id/time_count_continue_pause"
+                app:layout_widthPercent="40%"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@{pauseing?@drawable/bg_fillet_colorprimary:@drawable/bg_fillet_grey_500}"
+                android:visibility="@{counting?View.VISIBLE:View.INVISIBLE}"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/white"
+                android:text="@{pauseing?@string/continue_:@string/pause}"
+                />
+
+            <!--重置 记录-->
+            <Button
+                android:id="@+id/time_count_reset_record"
+                app:layout_widthPercent="40%"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@{pauseing?@drawable/bg_fillet_grey_500:@drawable/bg_fillet_colorprimary}"
+                android:visibility="@{counting?View.VISIBLE:View.INVISIBLE}"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/white"
+                android:text="@{pauseing?@string/reset:@string/record}"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_24"/>
+
+        <!--列表记录-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/time_count_list_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</layout>

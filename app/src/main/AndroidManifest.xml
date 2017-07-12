@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ruiaa.toolpck">
+
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 储存盘读写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 多媒体 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 相机 闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/toolpck"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.SettingActivity">
+        </activity>
+        <activity android:name=".tool.hardware.flashlight.FlashlightActivity">
+        </activity>
+        <activity android:name=".tool.hardware.vibrate.VibratorActivity">
+        </activity>
+        <activity android:name=".tool.measure.gradienter.GradienterActivity">
+        </activity>
+        <activity android:name=".tool.measure.compass.CompassActivity">
+        </activity>
+        <activity android:name=".tool.measure.environment.EnvironmentActivity">
+        </activity>
+        <activity android:name=".tool.measure.ruler.RulerActivity">
+        </activity>
+        <activity android:name=".tool.measure.protractor.ProtractorActivity">
+        </activity>
+        <activity android:name=".tool.measure.timecount.TimeCountActivity">
+        </activity>
+        <activity android:name=".tool.measure.timecountdown.TimeCountDownActivity">
+        </activity>
+        <activity android:name=".tool.measure.alarm.AlarmActivity">
+        </activity>
+        <activity android:name=".tool.calculation.calculator.CalculatorActivity">
+        </activity>
+        <activity android:name=".tool.query.phonecode.PhoneCodeActivity">
+        </activity>
+        <activity android:name=".tool.query.commonphone.CommonPhoneActivity">
+        </activity>
+        <activity android:name=".tool.query.express.ExpressActivity">
+        </activity>
+        <activity android:name=".tool.query.weather.WeatherActivity">
+        </activity>
+        <activity android:name=".tool.query.idcard.IdcardActivity">
+        </activity>
+        <activity android:name=".tool.query.zodiac.ZodiacActivity">
+        </activity>
+        <activity android:name=".tool.query.barcode.BarcodeActivity">
+        </activity>
+        <activity android:name=".tool.query.qrcode.QrcodeActivity">
+        </activity>
+        <activity android:name=".tool.query.pm25.Pm25Activity">
+        </activity>
+        <activity android:name=".tool.calculation.unitconvert.UnitConvertActivity">
+        </activity>
+        <activity android:name=".tool.calculation.currencyrate.CurrencyRateActivity">
+        </activity>
+        <activity android:name=".tool.calculation.personaltax.PersonalTaxActivity">
+        </activity>
+        <activity android:name=".tool.hardware.soundrecord.SoundRecordActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/view_toolbar"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <!--    夜间模式    -->
+                <RelativeLayout
+                    android:id="@+id/setting_night_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    >
+
+                    <ImageView
+                        android:id="@+id/setting_night_theme_img"
+                        android:layout_width="@dimen/setting_label_icon_size"
+                        android:layout_height="@dimen/setting_label_icon_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/setting_label_icon_size"
+                        android:layout_marginRight="@dimen/setting_label_icon_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/setting_night_theme_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/setting_night_theme_img"
+                        android:text="@string/night_theme"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="@color/divider"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@id/setting_night_theme_text"
+                        />
+
+                    <com.rey.material.widget.Switch
+                        android:id="@+id/setting_night_theme_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/setting_label_icon_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+                <!--    主题  -->
+                <RelativeLayout
+android:id="@+id/setting_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    >
+
+                    <ImageView
+                        android:id="@+id/setting_theme_img"
+                        android:layout_width="@dimen/setting_label_icon_size"
+                        android:layout_height="@dimen/setting_label_icon_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/setting_label_icon_size"
+                        android:layout_marginRight="@dimen/setting_label_icon_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/setting_theme_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/setting_theme_img"
+                        android:text="@string/theme"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="@color/divider"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@id/setting_theme_text"
+                        />
+
+                </RelativeLayout>
+                <!--    反馈  -->
+                <RelativeLayout
+android:id="@+id/setting_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    >
+
+                    <ImageView
+                        android:id="@+id/setting_feedback_img"
+                        android:layout_width="@dimen/setting_label_icon_size"
+                        android:layout_height="@dimen/setting_label_icon_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/setting_label_icon_size"
+                        android:layout_marginRight="@dimen/setting_label_icon_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/setting_feedback_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/setting_feedback_img"
+                        android:text="@string/feedback"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="@color/divider"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@id/setting_feedback_text"
+                        />
+
+                </RelativeLayout>
+                <!--    关于  -->
+                <RelativeLayout
+android:id="@+id/setting_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    >
+
+                    <ImageView
+                        android:id="@+id/setting_about_img"
+                        android:layout_width="@dimen/setting_label_icon_size"
+                        android:layout_height="@dimen/setting_label_icon_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/setting_label_icon_size"
+                        android:layout_marginRight="@dimen/setting_label_icon_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/setting_about_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/setting_about_img"
+                        android:text="@string/about"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="@color/divider"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@id/setting_about_text"
+                        />
+
+                </RelativeLayout>
+                <!--    检查更新    -->
+                <RelativeLayout
+android:id="@+id/setting_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    >
+
+                    <ImageView
+                        android:id="@+id/setting_update_img"
+                        android:layout_width="@dimen/setting_label_icon_size"
+                        android:layout_height="@dimen/setting_label_icon_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/setting_label_icon_size"
+                        android:layout_marginRight="@dimen/setting_label_icon_size"
+                        />
+
+                    <TextView
+                        android:id="@+id/setting_update_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/setting_update_img"
+                        android:text="@string/check_update"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="@color/divider"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@id/setting_update_text"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

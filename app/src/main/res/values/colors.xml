@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="divider">#b6b4b4</color>
+
+    <color name="night_toolbar_bg">@color/md_grey_900</color>
+
+
+
+    <color name="white">@color/md_white_1000</color>
+    <color name="black">@color/md_black_1000</color>
+
+    <color name="text_color_normal_day">@color/md_grey_800</color>
+    <color name="text_color_normal_night">@color/md_grey_200</color>
+
+    <!--主题颜色-->
+    <color name="colorPrimary">@color/md_light_blue_500</color>
+    <color name="colorPrimaryDark">@color/md_light_blue_700</color>
+    <color name="colorAccent">@color/md_red_500</color>
+    <array name="colors">
+        <item>@color/colorPinkPrimary</item>
+        <item>@color/colorBluePrimary</item>
+        <item>@color/colorBrownPrimary</item>
+        <item>@color/colorGreenPrimary</item>
+        <item>@color/colorPurplePrimary</item>
+        <item>@color/colorTealPrimary</item>
+        <item>@color/colorRedPrimary</item>
+        <item>@color/colorDeepPurplePrimary</item>
+        <item>@color/colorOrangePrimary</item>
+        <item>@color/colorIndigoPrimary</item>
+        <item>@color/colorCyanPrimary</item>
+        <item>@color/colorLightGreenPrimary</item>
+        <item>@color/colorLimePrimary</item>
+        <item>@color/colorDeepOrangePrimary</item>
+        <item>@color/colorBlueGreyPrimary</item>
+    </array>
+    <!--blue-->
+    <color name="colorBluePrimary">@color/md_light_blue_500</color>
+    <color name="colorBluePrimaryDark">@color/md_light_blue_700</color>
+    <color name="colorBlueAccent">@color/md_pink_A400</color>
+    <!--red-->
+    <color name="colorRedPrimary">@color/md_red_500</color>
+    <color name="colorRedPrimaryDark">@color/md_red_700</color>
+    <color name="colorRedAccent">@color/md_light_blue_A400</color>
+    <!--brown-->
+    <color name="colorBrownPrimary">@color/md_brown_500</color>
+    <color name="colorBrownPrimaryDark">@color/md_brown_700</color>
+    <color name="colorBrownAccent">@color/md_blue_grey_400</color>
+    <!--green-->
+    <color name="colorGreenPrimary">@color/md_green_500</color>
+    <color name="colorGreenPrimaryDark">@color/md_green_700</color>
+    <color name="colorGreenAccent">@color/md_purple_A400</color>
+    <!--purple-->
+    <color name="colorPurplePrimary">@color/md_purple_500</color>
+    <color name="colorPurplePrimaryDark">@color/md_purple_700</color>
+    <color name="colorPurpleAccent">@color/md_green_A400</color>
+    <!--teal-->
+    <color name="colorTealPrimary">@color/md_teal_500</color>
+    <color name="colorTealPrimaryDark">@color/md_teal_700</color>
+    <color name="colorTealAccent">@color/md_pink_A400</color>
+
+    <!--pink-->
+    <color name="colorPinkPrimary">@color/md_pink_500</color>
+    <color name="colorPinkPrimaryDark">@color/md_pink_700</color>
+    <color name="colorPinkAccent">@color/md_teal_A400</color>
+
+    <!--deepPurple-->
+    <color name="colorDeepPurplePrimary">@color/md_deep_purple_500</color>
+    <color name="colorDeepPurplePrimaryDark">@color/md_deep_purple_700</color>
+    <color name="colorDeepPurpleAccent">@color/md_light_green_A400</color>
+
+    <!--orange-->
+    <color name="colorOrangePrimary">@color/md_orange_500</color>
+    <color name="colorOrangePrimaryDark">@color/md_orange_700</color>
+    <color name="colorOrangeAccent">@color/md_blue_A400</color>
+
+    <!--indigo-->
+    <color name="colorIndigoPrimary">@color/md_indigo_500</color>
+    <color name="colorIndigoPrimaryDark">@color/md_indigo_700</color>
+    <color name="colorIndigoAccent">@color/md_lime_A400</color>
+
+    <!--cyan-->
+    <color name="colorCyanPrimary">@color/md_cyan_500</color>
+    <color name="colorCyanPrimaryDark">@color/md_cyan_700</color>
+    <color name="colorCyanAccent">@color/md_red_A400</color>
+
+    <!--lightGreen-->
+    <color name="colorLightGreenPrimary">@color/md_light_green_500</color>
+    <color name="colorLightGreenPrimaryDark">@color/md_light_green_700</color>
+    <color name="colorLightGreenAccent">@color/md_purple_A400</color>
+
+    <!--lime-->
+    <color name="colorLimePrimary">@color/md_lime_500</color>
+    <color name="colorLimePrimaryDark">@color/md_lime_700</color>
+    <color name="colorLimeAccent">@color/md_indigo_A400</color>
+
+    <!--deepOrange-->
+    <color name="colorDeepOrangePrimary">@color/md_deep_orange_500</color>
+    <color name="colorDeepOrangePrimaryDark">@color/md_deep_orange_700</color>
+    <color name="colorDeepOrangeAccent">@color/md_light_blue_A400</color>
+
+    <!--blueGrey-->
+    <color name="colorBlueGreyPrimary">@color/md_blue_grey_500</color>
+    <color name="colorBlueGreyPrimaryDark">@color/md_blue_grey_700</color>
+    <color name="colorBlueGreyAccent">@color/md_yellow_A400</color>
+</resources>

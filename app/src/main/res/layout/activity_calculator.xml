@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/calculator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/view_toolbar"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                app:layout_heightPercent="40%"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dp_8"
+                >
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_16"/>
+                <TextView
+                    android:id="@+id/calculator_record_1"
+                    style="@style/textview_calculator_result_record"
+                    />
+                <TextView
+                    android:id="@+id/calculator_record_2"
+                    style="@style/textview_calculator_result_record"
+                    />
+                <TextView
+                    android:id="@+id/calculator_record_3"
+                    style="@style/textview_calculator_result_record"
+                    />
+                <com.ruiaa.toolpck.common.widget.AutoSizeTextView
+                    android:id="@+id/calculator_input_result"
+                    style="@style/textview_calculator_result_record"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    />
+            </LinearLayout>
+
+
+            <!--输入-->
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:columnCount="4"
+                app:layout_heightPercent="60%"
+                app:orientation="horizontal"
+                app:rowCount="5"
+
+                >
+
+                <Button
+                    android:id="@+id/calculator_clear"
+                    style="@style/gridlayout_item_default"
+                    android:text="C"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_delete_last"
+                    style="@style/gridlayout_item_default"
+                    android:text="\u2190"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_divide"
+                    style="@style/gridlayout_item_default"
+                    android:text="@string/calculator_divide"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_multiply"
+                    style="@style/gridlayout_item_default"
+                    android:text="@string/calculator_multiply"
+                    android:layout_marginRight="0dp"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_seven"
+                    style="@style/gridlayout_item_default"
+                    android:text="7"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_eight"
+                    style="@style/gridlayout_item_default"
+                    android:text="8"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_nine"
+                    style="@style/gridlayout_item_default"
+                    android:text="9"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_subtract"
+                    style="@style/gridlayout_item_default"
+                    android:text="—"
+                    android:layout_marginRight="0dp"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_four"
+                    style="@style/gridlayout_item_default"
+                    android:text="4"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_five"
+                    style="@style/gridlayout_item_default"
+                    android:text="5"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_six"
+                    style="@style/gridlayout_item_default"
+                    android:text="6"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_add"
+                    style="@style/gridlayout_item_default"
+                    android:text="+"
+                    android:layout_marginRight="0dp"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_one"
+                    style="@style/gridlayout_item_default"
+                    android:text="1"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_two"
+                    style="@style/gridlayout_item_default"
+                    android:text="2"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_three"
+                    style="@style/gridlayout_item_default"
+                    android:text="3"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_equal"
+                    style="@style/gridlayout_item_default"
+                    android:text="="
+                    app:layout_rowSpan="2"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="0dp"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_bracket"
+                    style="@style/gridlayout_item_default"
+                    android:text="( )"
+                    android:layout_marginBottom="0dp"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_0"
+                    style="@style/gridlayout_item_default"
+                    android:text="0"
+                    android:layout_marginBottom="0dp"
+                    />
+
+                <Button
+                    android:id="@+id/calculator_point"
+                    style="@style/gridlayout_item_default"
+                    android:layout_marginBottom="0dp"
+                    android:text="."
+                    />
+            </android.support.v7.widget.GridLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+</layout>

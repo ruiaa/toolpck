@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">工具包</string>
+
+    <string name="have_copy_to_clipboard">已复制至粘贴板</string>
+    <string name="copy_to_clipboard">复制至粘贴板</string>
+
+    <string name="delete">删除</string>
+    <string name="save">保存</string>
+
+    <string name="time_milli">毫秒</string>
+    <string name="time_second">秒</string>
+    <string name="time_minute">分钟</string>
+    <string name="time_hour">小时</string>
+
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="reset">重置</string>
+    <string name="continue_">继续</string>
+    <string name="pause">暂停</string>
+    <string name="record">记录</string>
+    <string name="error">错误</string>
+
+
+    <string name="limitless">无限</string>
+    <string name="limit">限定</string>
+    <string name="time">时间</string>
+    <string name="repeat">重复</string>
+    <string name="share">分享</string>
+    <string name="collect">收藏</string>
+    <string name="release">发布</string>
+    <string name="commit">提交</string>
+    <string name="reply">回复</string>
+    <string name="comment">评论</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+
+    <string name="setting">设置</string>
+    <string name="notice">通知</string>
+
+    <string name="edit">编辑</string>
+
+    <string name="often_use">常用</string>
+    <string name="add_often_use">添加常用工具</string>
+
+    <string name="measure">测量</string>
+    <string name="query">查询</string>
+    <string name="calculation">计算</string>
+
+    <string name="flashlight">闪光灯</string>
+    <string name="brightness">亮度</string>
+    <string name="twinkle">闪烁</string>
+    <string name="bright">亮</string>
+    <string name="dark">暗</string>
+
+
+    <string name="mobile_phone">手机</string>
+    <string name="vibrate">震动</string>
+    <string name="vibrate_start">震动</string>
+    <string name="vibrate_stop">停止</string>
+
+    <string name="gradienter">水平仪</string>
+    <string name="compass">指南针</string>
+    <string name="north">北</string>
+    <string name="south">南</string>
+    <string name="east">东</string>
+    <string name="west">西</string>
+    <string name="compass_flat_to_accuracy">请把手机平放，以便准确测量</string>
+
+    <string name="environment">环境</string>
+
+    <string name="ruler">尺子</string>
+    <string name="protractor">量角器</string>
+    <string name="time_count">计时器</string>
+    <string name="time_count_down">倒计时</string>
+    <string name="vibrator_to_remind">震动提醒</string>
+    <string name="alarm">闹钟</string>
+    <string name="time_count_down_set_to_remind">设置提醒时间点</string>
+    <string name="set_time">设置时间</string>
+    <string name="label">标签</string>
+
+    <string name="calculator">计算器</string>
+    <string name="calculator_divide">\u00f7</string>
+    <string name="calculator_multiply">\u00d7</string>
+    <string name="money_rate">汇率</string>
+    <string name="tax">税</string>
+
+
+    <string name="theme">主题</string>
+    <string name="night_theme">夜间模式</string>
+    <string name="check_update">检查更新</string>
+    <string name="feedback">反馈</string>
+    <string name="about">关于</string>
+
+    <string name="query_fail">查询失败</string>
+    <string name="try_again">请重试</string>
+    <string name="phone_code_query">手机号归属地</string>
+    <string name="phone_code_query_input_hint">请输入11位手机号或者前7位</string>
+    <string name="phone_code_query_input_error">请输入正确的11位手机号或者前7位</string>
+    <string name="phone_location">卡号归属地</string>
+    <string name="phone_card_type">卡类型</string>
+    <string name="phone_area_code">区号</string>
+    <string name="post_code">邮编</string>
+    <string name="common_phone">常用电话</string>
+
+    <string name="express">快递</string>
+    <string name="express_query">快递查询</string>
+    <string name="express_query_input_hint">请输入快递运单号</string>
+    <string name="query_fail_retry">查询失败，请重试</string>
+    <string name="express_query_no_track">此运单暂无物流信息</string>
+    <string name="select_shipper">选择快递公司</string>
+
+    <string name="weather">天气</string>
+    <string name="pm25">pm2.5</string>
+    <string name="idcard">身份证</string>
+    <string name="idcard_input_hint">请输入18或15位身份证号码</string>
+    <string name="idcard_local">发证地</string>
+    <string name="sex">性别</string>
+    <string name="date_of_birth">出生日期</string>
+
+    <string name="zodiac">星座</string>
+    <string name="barcode">条形码</string>
+    <string name="qrcode">二维码</string>
+
+    <string name="unit_convert">单位换算</string>
+    <string name="currency_rate">货币汇率</string>
+    <string name="personal_tax">个人所得税</string>
+
+
+    <string name="sound_record">录音</string>
+    <string name="no_network">网络不可用</string>
+    <string name="please_open_network">请打开网络</string>
+    <string name="no_network_please_open_network">网络不可用，请打开网络</string>
+
+</resources>

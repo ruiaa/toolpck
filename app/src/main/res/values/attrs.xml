@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradienterView">
+        <attr name="gradienter_circle_color" format="color"/>
+        <attr name="gradienter_bubble_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CompassView">
+        <attr name="compass_north_color" format="color"/>
+        <attr name="compass_south_color" format="color"/>
+    </declare-styleable>
+    
+    <!--主题-->
+    <attr name="toolpck_bg_calculator_item" format="reference"/>
+</resources>

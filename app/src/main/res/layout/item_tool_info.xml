@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:svg="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="toolInfoHeight"
+            type="int"/>
+        <variable
+            name="toolInfoText"
+            type="String"/>
+        <variable
+            name="toolInfoImg"
+            type="int"/>
+        <import type="com.ruiaa.toolpck.util.ThemeUtil"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@{toolInfoHeight,default=`wrap_content`}"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@{ThemeUtil.getNightModeSwitch() ? @drawable/bg_press_grey_700:@drawable/bg_press_grey_300}"
+        >
+
+        <Space
+            android:id="@+id/item_tool_info_grid_center"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            />
+
+        <com.github.megatronking.svg.support.extend.SVGImageView
+            android:id="@+id/item_tool_info_grid_img"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/item_tool_info_grid_center"
+            android:src="@{toolInfoImg}"
+            svg:svgColor="?attr/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_tool_info_grid_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="@{toolInfoText}"
+            />
+
+    </RelativeLayout>
+
+</layout>
